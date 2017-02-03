@@ -1,0 +1,19 @@
+# LAYER_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+LCONF_VERSION = "7"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+MONKROOT ?= ""
+
+BBLAYERS ?= " \
+  ${MONKROOT}/meta-oe \
+  ${MONKROOT}/oe-core \
+  "
+
+# BSP Layers
+BBLAYERS += "${MONKROOT}/meta-raspberrypi"
+
+# MonK OS Layers
+BBLAYERS += "${MONKROOT}/meta-monkos"
+BBLAYERS += "${MONKROOT}/meta-monkos-raspberrypi"

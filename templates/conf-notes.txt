@@ -1,0 +1,9 @@
+Hi there, you are now ready to build Monk OS for Raspberry Pi board.
+
+Currently the following build targets are supported:
+    monkos-minimal
+
+To build do "bitbake <target>"
+eg: bitbake monkos-minimal
+
+Note: Don't forget to contibute back to the community ;)
