@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEPENDENT_LAYERS=("bitbake" \
+DEPENDENT_LAYERS=( \
                   "meta-oe"  \
                   "oe-core" \
                   "meta-monkos" \
